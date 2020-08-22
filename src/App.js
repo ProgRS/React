@@ -1,26 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+function Avatar(props){
+
+      return(
+        <div> 
+
+            <img src={props.url} alt={props.name} />
+            <br/>
+            <span> {props.name} </span>
+
+        </div>
+      );
+  
+  }
+  
+  
+  function App() {
+
+    let user = {
+      url:"https://www.google.com.br/google.jpg",
+      name:"Fernando Trindade"
+    };
+
+    return <>
+      <Avatar url={user.url} name={user.name} />     
+    </>;
+      
+  }
+
+
+
+/*
+function BemVindo(props){
+
+return <h1>Olá, {props.nome}! {props.idade} anos.</h1>;
+}
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+  
+  <BemVindo nome="Fernando" idade="90" />
+  <BemVindo nome="Pedro" idade="70"/>
+  <BemVindo nome="Paulo" idade="80"/> 
+  
+  </>;
+    
 }
+*/
 
 export default App;
