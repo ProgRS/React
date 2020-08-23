@@ -1,4 +1,4 @@
 ## Conceitos utilizados de react
 
-Utilizando o css no react , duas formas com css e styleshitc
-Os dois podem ser usados juntos
+Utilizando o CSS com  react , duas formas com CSS e Stylesheet.
+Os dois podem ser usados juntos na implementação.
