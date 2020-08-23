@@ -12,9 +12,19 @@ background-color: #00FF00;
 const Botao = styled.button`
 font-sizen:19px;  
 padding:10px;
-background-color: ${props => props.color || "#00FF00"};
+border:3px solid #FF0000;
+color:#FF0000;
+background-color:#FFF;
+margin:5px;
+border-radius:5px;
 `;
+ const BotaoPequeno = styled(Botao)`
+ 
+   
+ padding:5px 10px;
+ font-size:16px;
 
+ `;
   
   
   function App() {
@@ -22,9 +32,9 @@ background-color: ${props => props.color || "#00FF00"};
     
     return( 
     <Site>
-          <Botao color="#FF0000">Click aqui</Botao>
-          <Botao color="#0000FF">Click aqui</Botao>
-          <Botao>Click aqui</Botao>
+          <Botao >Click aqui</Botao>
+          <BotaoPequeno >Click aqui</BotaoPequeno>
+         
       </Site>
 
     );
