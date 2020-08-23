@@ -1,13 +1,14 @@
 import React from 'react';
+//import './App.css';
 
 function Avatar(props){
 
       return(
-        <div> 
+        <div style={ {backgroundColor:'#FF0000',padding:20, width:150} }> 
 
-            <img src={props.url} alt={props.name} />
+            <img style={ {width:50, height:50} } src={props.user.url} alt={props.user.name} />
             <br/>
-            <span> {props.name} </span>
+            <span> {props.user.name} </span>
 
         </div>
       );
@@ -23,30 +24,9 @@ function Avatar(props){
     };
 
     return <>
-      <Avatar url={user.url} name={user.name} />     
+      <Avatar user={user} />     
     </>;
       
   }
-
-
-
-/*
-function BemVindo(props){
-
-return <h1>Olá, {props.nome}! {props.idade} anos.</h1>;
-}
-
-
-function App() {
-  return <>
-  
-  <BemVindo nome="Fernando" idade="90" />
-  <BemVindo nome="Pedro" idade="70"/>
-  <BemVindo nome="Paulo" idade="80"/> 
-  
-  </>;
-    
-}
-*/
 
 export default App;
