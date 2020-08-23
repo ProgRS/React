@@ -1,32 +1,30 @@
 import React from 'react';
+import styled from 'styled-components';
 //import './App.css';
+const Site = styled.div`
+width:440px;
+height:400px;
+background-color: #00FF00;
 
-function Avatar(props){
 
-      return(
-        <div style={ {backgroundColor:'#FF0000',padding:20, width:150} }> 
 
-            <img style={ {width:50, height:50} } src={props.user.url} alt={props.user.name} />
-            <br/>
-            <span> {props.user.name} </span>
+`;
+const Botao = styled.button`
+font-sizen:19px;  
+padding:10px;
+`;
 
-        </div>
-      );
-  
-  }
   
   
   function App() {
 
-    let user = {
-      url:"https://www.google.com.br/google.jpg",
-      name:"Fernando Trindade"
-    };
+    
+    return( 
+    <Site>
+          <Botao>Click aqui</Botao>
+      </Site>
 
-    return <>
-      <Avatar user={user} />     
-    </>;
-      
+    )
   }
 
 export default App;
